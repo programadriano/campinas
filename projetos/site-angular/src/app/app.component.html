@@ -1,0 +1,21 @@
+<nav class="navbar navbar-expand-sm bg-dark">
+
+  <!-- Links -->
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link" href="#">Home</a>
+    </li>
+  </ul>
+
+</nav>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col" *ngFor="let news of news">
+      <img src="{{news.img}}" />
+      <p class="hat">{{news.hat}}</p>
+    </div>
+  </div>
+</div>
+
+<router-outlet></router-outlet>
